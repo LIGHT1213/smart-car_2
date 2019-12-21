@@ -20,7 +20,6 @@ int main()
   direction_flag = 0;
 	control_flag = 0;
 	
-	int a;
 	
 	while(1)
 	{
