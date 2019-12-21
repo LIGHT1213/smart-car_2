@@ -7,7 +7,7 @@ int count2 = 0;
 double dir_out;
 double dir_out_last = 0;
 double dir_value = 0;
-
+extern int     change_flag;
 extern double a[5];
 
 
@@ -29,7 +29,13 @@ void direction_pid()
     static double middline = 0;
 		
     double kP = 25, kI = 0, kD = 200;
-
+    if(change_flag == 1)
+    {
+        kP = 35;//85                              //100    3500      2500
+        //85     5500      2800
+        kD =3800;//4000                            //75     4900      3000
+    }
+//upright pid =2000 kp=30 kd=3800  V=8.024v
     dir_errvalue = dir_value - middline;
     dir_integralerrvalue += dir_errvalue;
 

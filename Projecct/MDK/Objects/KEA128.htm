@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\Objects\KEA128.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\KEA128.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Dec 21 13:34:27 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Dec 21 16:22:51 2019
 <BR><P>
-<H3>Maximum Stack Usage =        208 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        200 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; direction_pid &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; __aeabi_llsr
 <P>
@@ -612,8 +612,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[60]"></a>direction_pid</STRONG> (Thumb, 398 bytes, Stack size 80 bytes, dir_pid.o(i.direction_pid))
-<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = direction_pid &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; __aeabi_llsr
+<P><STRONG><a name="[60]"></a>direction_pid</STRONG> (Thumb, 420 bytes, Stack size 72 bytes, dir_pid.o(i.direction_pid))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = direction_pid &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; __aeabi_llsr
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_read
 <LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
@@ -740,7 +740,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[26]"></a>main</STRONG> (Thumb, 132 bytes, Stack size 0 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = main &rArr; direction_pid &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; __aeabi_llsr
+<BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = main &rArr; direction_pid &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; __aeabi_llsr
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
 <LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitPit
@@ -827,7 +827,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SerialInit
 </UL>
 
-<P><STRONG><a name="[6d]"></a>upright_pid</STRONG> (Thumb, 454 bytes, Stack size 56 bytes, up right_pid.o(i.upright_pid))
+<P><STRONG><a name="[6d]"></a>upright_pid</STRONG> (Thumb, 488 bytes, Stack size 56 bytes, up right_pid.o(i.upright_pid))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = upright_pid &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; __aeabi_llsr
 </UL>
 <BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_read_reg_bytes

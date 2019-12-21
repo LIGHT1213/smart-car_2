@@ -17,7 +17,7 @@ double upright_out;
 double upright_old;
 double upright_value;
 double I2C_ARR;
-
+extern int     change_flag;
 extern double  speed_out;
 uint8_t pitch_angle[30];
 	
@@ -66,7 +66,11 @@ void upright_pid()
 		upright_out = -8000;
 	//printf("%f\n",upright_out);
 	angle_old = Pitch_value;
-	
+		change_flag = 1;
+	if(change_flag == 1)
+	{
+			upright_out = -2200;                //2150
+	}
 	upright_value = upright_out - upright_old;
 	upright_old = upright_out;
 }
